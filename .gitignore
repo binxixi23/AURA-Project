@@ -1,0 +1,7 @@
+echo __pycache__/ > .gitignore
+echo *.pyc >> .gitignore
+echo .DS_Store >> .gitignore
+echo *.log >> .gitignore
+echo build/ >> .gitignore
+echo install/ >> .gitignore
+echo log/ >> .gitignore
