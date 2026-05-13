@@ -1,0 +1,24 @@
+{
+  "system_name": "AURA_Adaptive_Universal_Rehabilitation_Agent",
+  "security_version": "1.0.2",
+  "encryption_protocols": {
+    "data_at_rest": "AES-256-GCM",
+    "data_in_transit": "TLS_1.3_AES_256_GCM_SHA384",
+    "data_in_use_boundary": "Hardware_Enclave_Isolated_RAM"
+  },
+  "edge_node_authentication": {
+    "ros2_security_plugin": "SROS2_Enabled",
+    "node_identity_verification": "X.509_Certificates",
+    "packet_auth_frequency_ms": 1.0
+  },
+  "stress_handling_thresholds": {
+    "patient_heart_rate_max_bpm": 140,
+    "galvanic_skin_response_anomaly_score": 0.85,
+    "intent_disambiguation_confidence_threshold": 0.85
+  },
+  "incident_response_actions": {
+    "low_confidence_intent": "TRIGGER_ACTIVE_DELAY_MODE",
+    "biometric_anomaly_detected": "ENGAGE_SAFE_HOLD_KINEMATICS",
+    "critical_failure_override": "INITIATE_LOW_LATENCY_WEBRTC_HITL_UPLINK"
+  }
+}
